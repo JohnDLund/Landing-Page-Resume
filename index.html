@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="style.css">
 
 
-<body class="w3-black">
+<body class="w3-black container-fluid">
 
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -22,7 +22,7 @@
         </a>
         <a href="#applications" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-th w3-xxlarge p-2"></i>
-            <p>APPLICATIONS</p>
+            <p>APPS</p>
         </a>
         <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-handshake-o w3-xxlarge p-2"></i>
@@ -38,7 +38,7 @@
     <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
         <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
             <a href="#" class="w3-bar-item w3-button" style="width:25% !important">SUMMARY</a>
-            <a href="#applications" class="w3-bar-item w3-button" style="width:25% !important">APPLICATIONS</a>
+            <a href="#applications" class="w3-bar-item w3-button" style="width:25% !important">APPS</a>
             <a href="#experience" class="w3-bar-item w3-button" style="width:25% !important">EXPEREIENCE</a>
             <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
         </div>
@@ -51,22 +51,19 @@
             <h1 class="w3-jumbo">John Lund</h1>
             <p>Software Developer</p>
             <p class="text-secondary">Boise, Idaho</p>
-            <img src="profilePicture.jpeg" class="border rounded" width="300px">
+            <img src="profilePicture.jpeg" class="border rounded m-auto" width="300px">
         </header>
 
         <!-- Summary Section -->
-        <div class="w3-content w3-justify w3-padding-64" id="summary">
+        <div class="w3-content py-4" id="summary">
             <h1 class="">Summary</h1>
             <h5 class="text-secondary">
-                Software developer, Certified Scrum Master and former Army Officer with a secret security clearance
-                and experience building full-stack web applications in multiple languages and frameworks.
-                Proven communicator and problem solver with experience working in cross-functional teams using Agile methods to improve processes and
-                maintain version control. Comprehensive background in leadership, strategic planning, risk management, and project management.
+                Software developer, Certified Scrum Master and former Army Officer with a secret security clearance and experience building full-stack web applications in multiple languages and frameworks. Proven communicator and problem solver with experience working in cross-functional teams using Agile methods to improve processes and maintain version control. Comprehensive background in leadership, strategic planning, risk management, and project management.
             </h5>
-            <div class="container-fluid mt-5">
+            <div class="container mt-5">
                 <div class="row text-center justify-content-center justify-content-xl-between" id="applications">
-                    <div class="col-12 col-md-7 col-xl-5 bg-light text-dark order-0 my-2"><b>Front End</b></div>
-                    <div class="col-12 col-md-7 col-xl-5 bg-light text-dark order-3 order-xl-1 my-2"><b>Back End</b></div>
+                    <div class="col-12 col-md-7 col-xl-5 bg-light text-dark order-0 "><b>Front End</b></div>
+                    <div class="col-12 col-md-7 col-xl-5 bg-light text-dark order-3 order-xl-1 mt-5 mt-lg-0"><b>Back End</b></div>
 
                     <div class="col-12 col-md-7 col-xl-5 order-1 order-xl-2 my-3">
                         <div class="row justify-content-between">
@@ -114,13 +111,37 @@
 
         <!-- Applications -->
         <h1 class="w3-content w3-text-light-grey py-4 my-4">Applications</h1>
-        <div class="w3-row-padding d-flex justify-content-center">
-            <div class="w3-quarter w3-margin-bottom">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-xl-3 w3-margin-bottom">
+                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Crypto-90s</li>
+                    <li class="w3-padding-16 text-left">Crypto90s is a novel way of displaying Non-Fungible Tokens from the Internet Computer blockchain. The app integrates Vue.js, Node.js, MongoDB, Stoic Identity, Puppeteer, and other libraries. On authentication, the app constructs a virtual wallet of a user's NFTs. Users choose a themed background image to use as a personal NFT display case. Each image has preprogrammed positions where users can superimpose their NFTs, generate a unique public URL, and download their display case image.</li>
+                    <li class="w3-padding-16">Front End: &nbsp <b>Vue.Js</b></li>
+                    <li class="w3-padding-16">Back End: &nbsp <b>Node.Js</b></li>
+                    <li class="w3-padding-16">DataBase: &nbsp <b>MongoDB</b></li>
+                    <li class="w3-dark-grey w3-padding-24">
+                        <a class="w3-button w3-white w3-padding-large w3-hover-black m-1" href="https://go.crypto90s.xyz/#/" target="_block">Live Site</a>
+                        <a class="w3-button w3-white w3-padding-large w3-hover-black m-1" href="https://github.com/JohnDLund/Crypto-90s" target="_block">Code</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-xl-3 w3-margin-bottom">
+                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Keepr</li>
+                    <li class="w3-padding-16 text-left">Pinterest-like application focusing on many-to-many relationships using Auth0 authentication. The app allows a user to create and save public items of interest into personal vaults.</li>
+                    <li class="w3-padding-16">Front End: &nbsp <b>Vue.Js</b></li>
+                    <li class="w3-padding-16">Back End: &nbsp <b>.Net Core / C#</b></li>
+                    <li class="w3-padding-16">DataBase: &nbsp <b>MySQL</b></li>
+                    <li class="w3-dark-grey w3-padding-24">
+                        <a class="w3-button w3-white w3-padding-large w3-hover-black m-1" href="https://keeper-pins.herokuapp.com/#/" target="_block">Live Site</a>
+                        <a class="w3-button w3-white w3-padding-large w3-hover-black m-1" href="https://github.com/JohnDLund/Keepr" target="_block">Code</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-xl-3 w3-margin-bottom">
                 <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
                     <li class="w3-dark-grey w3-xlarge w3-padding-32">Kanban</li>
-                    <li class="w3-padding-16">Trello-like planning application.
-                        The app allows a user to create an account through Auth0 and track a project by building
-                        multi-level relationships between boards, tasks, and comments.</li>
+                    <li class="w3-padding-16 text-left">Trello-like planning application. The app allows a user to create an account through Auth0 and track a project by building multi-level relationships between boards, tasks, and comments.</li>
                     <li class="w3-padding-16">Front End: &nbsp <b>Vue.Js</b></li>
                     <li class="w3-padding-16">Back End: &nbsp <b>Node.Js</b></li>
                     <li class="w3-padding-16">DataBase: &nbsp <b>MongoDB</b></li>
@@ -130,35 +151,16 @@
                     </li>
                 </ul>
             </div>
-            <div class="w3-quarter w3-margin-bottom">
+            <div class="col-12 col-xl-3 w3-margin-bottom">
                 <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
                     <li class="w3-dark-grey w3-xlarge w3-padding-32">Mind & Body</li>
-                    <li class="w3-padding-16">An original fitness/trivia application incorporating both an external API
-                        and
-                        custom-built dataset to develop personalized fitness routines that can be shared with a remote
-                        partner via video chat using WebRTC with PeerJS. User authentication is handled through
-                        integration of Auth0.</li>
+                    <li class="w3-padding-16 text-left">An original fitness/trivia application incorporating both an external API and custom-built dataset to develop personalized fitness routines that can be shared with a remote partner via video chat using WebRTC with PeerJS. User authentication is handled through integration of Auth0.</li>
                     <li class="w3-padding-16">Front End: &nbsp <b>Vue.Js</b></li>
                     <li class="w3-padding-16">Back End: &nbsp <b>Node.Js</b></li>
                     <li class="w3-padding-16">DataBase: &nbsp <b>MongoDB</b></li>
                     <li class="w3-dark-grey w3-padding-24">
                         <a class="w3-button w3-white w3-padding-large w3-hover-black m-1" href="https://mind-your-body.herokuapp.com/#/" target="_block">Live Site</a>
                         <a class="w3-button w3-white w3-padding-large w3-hover-black m-1" href="https://github.com/Oliver-D-Jones/MindYourBody" target="_block">Code</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="w3-quarter w3-margin-bottom">
-                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Keepr</li>
-                    <li class="w3-padding-16">Pinterest-like application focusing on many-to-many relationships using
-                        Auth0 authentication. The app allows a user to create and save public items of interest into
-                        personal vaults.</li>
-                    <li class="w3-padding-16">Front End: &nbsp <b>Vue.Js</b></li>
-                    <li class="w3-padding-16">Back End: &nbsp <b>.Net Core / C#</b></li>
-                    <li class="w3-padding-16">DataBase: &nbsp <b>MySQL</b></li>
-                    <li class="w3-dark-grey w3-padding-24">
-                        <a class="w3-button w3-white w3-padding-large w3-hover-black m-1" href="https://keeper-pins.herokuapp.com/#/" target="_block">Live Site</a>
-                        <a class="w3-button w3-white w3-padding-large w3-hover-black m-1" href="https://github.com/JohnDLund/Keepr" target="_block">Code</a>
                     </li>
                 </ul>
             </div>
@@ -216,24 +218,27 @@
         <div class="w3-content" id="contact">
             <h1 class="pb-3">Contact Me</h1>
 
-            <div class="w3-content w3-row-padding d-flex justify-content-center p-4">
-                <p class="col-2">
-                    <a href="https://www.linkedin.com/in/john-d-lund/" target="_blank" class=" text-white">
+            <div class="row w3-content w3-row-padding d-flex justify-content-center py-4">
+                <p class="col-12 col-xl-2">
+                    <a href="https://www.linkedin.com/in/john-d-lund/" target="_blank" class="text-white">
                         <i class="fa fa-linkedin fa-fw  w3-xlarge w3-margin-right w3-hover-opacity text-primary"></i>
                         LinkedIn
                     </a>
                 </p>
-                <p class="col-3">
+                <p class="col-12 col-xl-3">
                     <i class="fa fa-phone fa-fw  w3-xlarge w3-margin-right text-success"></i>
                     (706) 394-5112
                 </p>
-                <p class="col-4">
-                    <i class="fa fa-envelope fa-fw  w3-xlarge w3-margin-right text-info"></i>
-                    john.david.lund@gmail.com
+                <p class="col-12 col-xl-4">
+                    <a href="mailto:john.david.lund@gmail.com" class="text-white">
+                        <i class="fa fa-envelope fa-fw  w3-xlarge w3-margin-right text-info"></i>
+                        john.david.lund@gmail.com
+                    </a>
                 </p>
-                <p class="col-2">
+                <p class="col-12 col-xl-2">
                     <a href="https://github.com/JohnDLund" target="_blank" class="text-white">
                         <i class="fa fa-github fa-fw w3-xlarge w3-margin-right"></i>GitHub
+                    </a>
             </div>
 
             <!-- End Contact Section -->
