@@ -14,7 +14,7 @@ h6 {
 
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {
-    width: 130px;
+    width: 120px;
     background: #222;
 }
 
@@ -36,5 +36,9 @@ h6 {
 }
 
 img {
-    height: fit-content;
+    max-width: -webkit-fill-available;
+}
+
+html {
+    scroll-behavior: smooth;
 }
