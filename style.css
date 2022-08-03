@@ -37,6 +37,7 @@ h6 {
 
 img {
     max-width: -webkit-fill-available;
+    object-fit: scale-down;
 }
 
 html {
